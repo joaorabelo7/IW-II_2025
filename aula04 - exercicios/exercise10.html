@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 10</title>
+</head>
+<body>
+
+    <script>
+        let user_number = parseInt(prompt("Type a number: "))
+        let num = 6
+        
+
+        while (user_number != num){
+            if(user_number > num){
+                console.log("Less")
+            }else if (user_number < num){
+                console.log("more")
+            }
+            let diff_number = Math.abs(user_number - num);
+            console.log(diff_number+" is the difference")
+            user_number = parseInt(prompt("Type a number between 1 - 10: "))
+        }   
+
+
+        console.log("You win !!!")
+    </script>
+    
+</body>
+</html>

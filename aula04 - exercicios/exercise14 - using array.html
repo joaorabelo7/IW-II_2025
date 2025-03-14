@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 14 melhorado</title>
+</head>
+<body>
+
+    <script>
+        let user_money = parseInt(prompt("type how much money you have: "))
+        let ballot = [100,50,20,10,5,1];
+        for (let i = 0; i < ballot.length; i++) { // .length eh como se fose o len() do python
+            console.log(ballot[i])
+        }
+        
+        while(user_money > 0){
+            let withdraw = parseInt(prompt("type hou much you wanna withdraw: "))
+            if(!ballot.includes(withdraw) ){ // Código sera executado se "withdraw" nao estiver na lista
+                console.log("Type a valid ballot")
+            }
+            else{
+                user_money = user_money - withdraw
+                console.log("Now, you have "+ user_money)
+                for (let i = 0; i < ballot.length; i++) { // .length eh como se fose o len() do python
+                    if (user_money >= ballot[i]){
+                        console.log(ballot[i])}
+        }}
+        }
+    </script>
+
+    
+</body>
+</html>

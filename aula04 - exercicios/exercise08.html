@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 08</title>
+</head>
+<body>
+
+    <script>
+
+        let name = prompt("Type your username: ");
+        let password = prompt("Type your password: ");
+        let a = false
+        while(a == false){
+            if (name != "Rabelo" || password != "123"){
+                console.log("Username or password is worng")
+                name = prompt("Type your username: ");
+                password = prompt("Type your password: ");
+            }else{
+                a = true
+                console.log("login completed")
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

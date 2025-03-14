@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 14</title>
+</head>
+<body>
+
+    <script>
+(async ()=> {
+    user_money = parseInt(prompt("type the amount you have: "))
+        let ballot_100 = 100
+        let ballot_50 = 50
+        let ballot_20 = 20
+        let ballot_10 = 10
+        let ballot_5 = 5
+        let ballot_1 = 1
+        console.log("MENU")
+
+        while(user_money > 0){
+            if(user_money >=100){
+                console.log(ballot_100)
+                console.log(ballot_50)
+                console.log(ballot_20)
+                console.log(ballot_10)
+                console.log(ballot_5)
+                console.log(ballot_1)
+                await new Promise(r => setTimeout(r, 2000));// Linha de codigo usada para esperar 2segundos ate a proxima linha ser executada para dar tempo do console carregar
+                var withdraw = parseInt(prompt("Type how much you wanna withdraw:1 "))
+                if (withdraw == 100){
+                    user_money = user_money - ballot_100
+                    console.log("Now, you have :"+ user_money)
+                }else if(withdraw == 50) {
+                    user_money -= ballot_50
+                    console.log("Now, you have :"+ user_money)
+                }
+                else if(withdraw == 20) {
+                    user_money -= ballot_20
+                    console.log("Now, you have :"+ user_money)
+                }
+                else if(withdraw == 10) {
+                    user_money -= ballot_10
+                    console.log("Now, you have :"+ user_money)
+                }
+                else if(withdraw == 5) {
+                    user_money -= ballot_5
+                    console.log("Now, you have :"+ user_money)
+                }
+                else if(withdraw == 1) {
+                    user_money -= ballot_1
+                    console.log("Now, you have :"+ user_money)
+                }
+            }
+            else if(user_money < 100 && user_money >= 50){      
+                
+                console.log(ballot_50)
+                console.log(ballot_20)
+                console.log(ballot_10)
+                console.log(ballot_5)
+                console.log(ballot_1)
+
+                withdraw = parseInt(prompt("Type how much you wanna withdraw: 2"))
+                
+                if(withdraw == 50) {
+                    user_money -= ballot_50
+                    console.log("Now, you have :"+ user_money)
+                }
+                else if(withdraw == 20) {
+                    user_money -= ballot_20
+                    console.log("Now, you have :"+ user_money)
+                }
+                else if(withdraw == 10) {
+                    user_money -= ballot_10
+                    console.log("Now, you have :"+ user_money)
+                }
+                else if(withdraw == 5) {
+                    user_money -= ballot_5
+                    console.log("Now, you have :"+ user_money)
+                }
+                else if(withdraw == 1) {
+                    user_money -= ballot_1
+                    console.log("Now, you have :"+ user_money)
+                }
+                }
+            else if(user_money < 50 && user_money>=20){    
+                
+                console.log(ballot_20)
+                console.log(ballot_10)
+                console.log(ballot_5)
+                console.log(ballot_1)
+                withdraw = parseInt(prompt("Type how much you wanna withdraw: 3"))
+                
+                
+                if(withdraw == 20) {
+                    user_money -= ballot_20
+                    console.log("Now, you have :"+ user_money)
+                }
+                else if(withdraw == 10) {
+                    user_money -= ballot_10
+                    console.log("Now, you have :"+ user_money)
+                }
+                else if(withdraw == 5) {
+                    user_money -= ballot_5
+                    console.log("Now, you have :"+ user_money)
+                }
+                else if(withdraw == 1) {
+                    user_money -= ballot_1
+                    console.log("Now, you have :"+ user_money)
+                }
+            }
+            else if(user_money < 20 && user_money>=10){   
+                console.log(ballot_10)
+                console.log(ballot_5)
+                console.log(ballot_1)
+                withdraw = parseInt(prompt("Type how much you wanna withdraw:4"))
+
+                if(withdraw == 10) {
+                    user_money -= ballot_10
+                    console.log("Now, you have :"+ user_money)
+                }
+                else if(withdraw == 5) {
+                    user_money -= ballot_5
+                    console.log("Now, you have :"+ user_money)
+                }
+                else if(withdraw == 1) {
+                    user_money -= ballot_1
+                    console.log("Now, you have :"+ user_money)
+            }}
+            else if(user_money < 10 && user_money>=5){        
+                console.log(ballot_5)
+                console.log(ballot_1)
+                withdraw = parseInt(prompt("Type how much you wanna withdraw: 5"))
+                if(withdraw == 5) {
+                    user_money -= ballot_5
+                    console.log("Now, you have :"+ user_money)
+                }
+                else if(withdraw == 1) {
+                    user_money -= ballot_1
+                    console.log("Now, you have :"+ user_money)
+                }
+
+            }
+            else if(user_money < 5 && user_money>=1){      
+                console.log(ballot_1)
+                withdraw = parseInt(prompt("Type how much you wanna withdraw: 6"))
+                if(withdraw == 1) {
+                    user_money -= ballot_1
+                    console.log("Now, you have :"+ user_money)
+                }
+ 
+            }
+            }}
+)()
+    </script>
+
+    
+</body>
+</html>
