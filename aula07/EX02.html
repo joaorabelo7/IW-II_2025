@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ligar Desligar</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #fafafa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+        h1 {
+            font-size: 2rem;
+            color: #2a9d8f;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 180px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        button {
+            padding: 12px 25px;
+            margin: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        #ligar {
+            background-color: #2a9d8f;
+            color: white;
+        }
+        #desligar {
+            background-color: #e76f51;
+            color: white;
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+        #estadoLampada {
+            font-size: 1.2rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+  <h1>Controle da Lâmpada</h1>
+  <img id="lampada" src="img/lampada_on.png" alt="Lâmpada Ligada">
+  <p id="estadoLampada">A lâmpada está ligada</p>
+  <div>
+    <button id="ligar">Ligar</button>
+    <button id="desligar">Desligar</button>
+  </div>
+
+  <script src="ex02.js"></script>
+
+</body>
+</html>
