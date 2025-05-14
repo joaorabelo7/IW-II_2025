@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+
+    <input type ="text" id="box" placeholder="Digite um texto" onkeyup="start()">
+    <br>
+    <p>Texto recebido é: <span id="text"></span></p>
+    
+
+    <script>
+        var box = document.getElementById("box");
+        var texto = document.getElementById("text");
+
+        function start(){
+            var letter = box.value;
+            text.innerHTML = letter;
+        }
+    </script>
+</body>
+</html>
