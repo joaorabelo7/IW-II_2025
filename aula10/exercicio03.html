@@ -1,3 +1,36 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <button id="btn" onclick="verify()">Button</button>
+    
+    <script>
+        user_input = document.getElementById("input");
+        btn = document.getElementById("btn");
+        value_input = "";
+        function verify(){
+            if(value_input === user_input.value){
+                alert("Change the input");
+            }else{
+                    value_input = user_input.value;
+                    Show_alert();
+                }
+            }
+        function Show_alert() {
+            alert(value_input);
+        }
+
+
+       
+    </script>
+</body>
+=======
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -10,4 +43,5 @@
     
     
 </body>
+>>>>>>> 2edb5e96bd3bfd85eedc9edd9853bc49b3cfa9a3
 </html>
