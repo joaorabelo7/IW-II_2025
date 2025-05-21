@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+<body>
+    
+    <p><input type="text" id="user_name" onkeyup="cont_character()">Type your name: </p>
+    <p><input type="email" name="" id="user_email" onblur="email_blur()">Type your email: </p>
+    <input type="submit" value="" id="submit" onclick="send()">SUBMIT
+    <p id="mensage"> mensage</p>
+
+
+   <script>
+    var user_email = document.getElementById("user_email");
+    var user_name = document.getElementById("user_name");
+    var mensage = document.getElementById("mensage");
+
+    function cont_character(){
+        var cont = user_name.value.length;
+        console.log(`Have ${cont} characters`);
+    }
+    function email_blur(){
+        var name = user_name.value;
+        var email = user_email.value;
+        if(email.length === 0){
+            mensage.innerHTML = "<strong> The E-mail is not filled </strong>";
+        }
+    }
+    function send(){
+        var name = user_name.value;
+        var email = user_email.value;
+        mensage.innerHTML = `<strong> Thanks ${name}, your email is ${email} </strong>`;
+    }
+   </script> 
+</body>
+</html>
